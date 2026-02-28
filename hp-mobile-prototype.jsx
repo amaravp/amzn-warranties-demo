@@ -15,10 +15,10 @@ function useImage(path) {
 var ImgCtx = React.createContext({});
 
 function ImageProvider({ children }) {
-  var logo   = useImage("/mnt/user-data/uploads/amazon-logo.png");
-  var prime  = useImage("/mnt/user-data/uploads/prime-badge.png");
-  var cartE  = useImage("/mnt/user-data/uploads/cart-empty.png");
-  var cartN  = useImage("/mnt/user-data/uploads/cart-number.png");
+  var logo   = useImage("/amazon-logo.png");
+  var prime  = useImage("/prime-badge.png");
+  var cartE  = useImage("/cart-empty.png");
+  var cartN  = useImage("/cart-number.png");
   return (
     <ImgCtx.Provider value={{ logo, prime, cartE, cartN }}>
       {children}
